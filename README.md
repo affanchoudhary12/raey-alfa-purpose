@@ -17,14 +17,20 @@
     }
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom right, #fff0f5, #f3e5f5);
+      background: linear-gradient(120deg, #fdeff9, #ec38bc, #7303c0);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
       color: #333;
+    }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
     }
     header {
       text-align: center;
       padding: 40px 20px;
-      background: #eec0c6;
-      background: linear-gradient(to right, #eec0c6, #7ee8fa);
+      background: rgba(255,255,255,0.1);
       color: white;
       font-family: 'Great Vibes', cursive;
     }
@@ -40,6 +46,10 @@
       text-align: center;
       padding: 40px;
       animation: fadeIn 1s ease;
+      background: rgba(255,255,255,0.2);
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      margin: 20px;
     }
     section.active {
       display: flex;
@@ -61,12 +71,17 @@
     footer {
       text-align: center;
       padding: 20px;
-      background: #f48fb1;
+      background: rgba(0,0,0,0.2);
       color: white;
     }
     @keyframes fadeIn {
       from {opacity: 0; transform: translateY(20px);}
       to {opacity: 1; transform: translateY(0);}
+    }
+    .bigLove {
+      font-size: 2.5em;
+      color: #ff4081;
+      margin-top: 30px;
     }
   </style>
 </head>
@@ -102,7 +117,8 @@
 
   <section id="page5">
     <h2>5. Mirror Talk</h2>
-    <p>Jab main mirror me dekhta hoon, to bolta hoon – "Affan, tu lucky hai, Alfa ne tujhe suna." Tumhaari ek haan meri duniya badal degi.</p>
+    <p>Alfa, tum khud se ek baar mirror me dekhna... aankhon me aankhon daal ke bolna: <br><br><strong>"Main special hoon, main pyaar ke laayak hoon... Affan mujhe dil se chahta hai."</strong></p>
+    <div class="bigLove">I LOVE YOU ❤️</div>
     <button class="button" onclick="nextPage('page6')">Next 🪞</button>
   </section>
 
@@ -125,14 +141,21 @@
   </section>
 
   <section id="page9">
-    <h2>9. The Proposal</h2>
-    <p>Alfa, will you be mine? 💍<br><br>Agar haan karti ho to mujhe teen baar "I Love You" bolna hoga. Main pehli baar bolne ke baad, tumse fir se puchunga... fir teesri baar. Kyunki main tumhare har lafz ko yaad rakhna chahta hoon.</p>
-    <button class="button" onclick="nextPage('page10')">Next 💞</button>
+    <h2>9. Fun Game!</h2>
+    <p>Chalo thoda smile karte hain!👇<br><br>Guess karo – agar Affan ek pushpa type hero hota, to tumhara naam kya hota? 😜<br><br>Options:<br>1. Alfa Rani 💃<br>2. Gulabo 2.0 🌸<br>3. Dil Ki Dhadkan 💗<br>4. Jaaneman Forever 💞<br><br>(Answer: Har baar tum hi ho 😉)</p>
+    <button class="button" onclick="nextPage('page10')">Next 🎮</button>
   </section>
 
   <section id="page10">
-    <h2>10. Final Words</h2>
-    <p>Alfa, main tumse jhooth nahi bolta. Agar tum mere saath ho, to main zindagi bhar tumhara saath nibhaunga. Main tumhara bracelet pehenta hoon, aur hamesha pehenta rahunga.<br><br>Tum mera band ho, meri dua ho... aur ab bas tum hi ho.<br><br><strong>I Love You ❤️</strong></p>
+    <h2>10. The Proposal</h2>
+    <p>Alfa, will you be mine? 💍<br><br>Agar haan karti ho to mujhe teen baar "I Love You" bolna hoga. Main pehli baar bolne ke baad, tumse fir se puchunga... fir teesri baar. Kyunki main tumhare har lafz ko yaad rakhna chahta hoon.</p>
+    <button class="button" onclick="nextPage('page11')">Next 💞</button>
+  </section>
+
+  <section id="page11">
+    <h2>11. Final Words</h2>
+    <p>Alfa, main tumse jhooth nahi bolta. Agar tum mere saath ho, to main zindagi bhar tumhara saath nibhaunga. Main tumhara bracelet pehenta hoon, aur hamesha pehenta rahunga.<br><br>Tum mera band ho, meri dua ho... aur ab bas tum hi ho.</p>
+    <div class="bigLove">I LOVE YOU ❤️</div>
   </section>
 
   <footer>
